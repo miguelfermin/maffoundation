@@ -14,7 +14,7 @@ final public class Future<T> {
     private var result: Result<T>?
     
     public init(compute: (@escaping (Result<T>) -> Void) -> Void) {
-        let label = "com.mafsoftware.APISwift.Future.\(UUID().uuidString)"
+        let label = "com.mafsoftware.MAFFoundation.Future.\(UUID().uuidString)"
         queue = DispatchQueue(label: label, attributes: .concurrent)
         queue.sync { compute(self.send) }
     }
