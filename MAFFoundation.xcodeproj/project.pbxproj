@@ -8,12 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		1EE327FB21A6457C00F8C7CD /* MAFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE327F921A6457C00F8C7CD /* MAFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EE3282A21A6483E00F8C7CD /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3281D21A6483D00F8C7CD /* Token.swift */; };
+		1EE3282B21A6483E00F8C7CD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3281E21A6483E00F8C7CD /* Response.swift */; };
+		1EE3282C21A6483E00F8C7CD /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3281F21A6483E00F8C7CD /* HttpMethod.swift */; };
+		1EE3282D21A6483E00F8C7CD /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282021A6483E00F8C7CD /* Future.swift */; };
+		1EE3282E21A6483E00F8C7CD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282121A6483E00F8C7CD /* APIError.swift */; };
+		1EE3282F21A6483E00F8C7CD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282221A6483E00F8C7CD /* Result.swift */; };
+		1EE3283021A6483E00F8C7CD /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282321A6483E00F8C7CD /* URLSessionProvider.swift */; };
+		1EE3283121A6483E00F8C7CD /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282421A6483E00F8C7CD /* Authenticator.swift */; };
+		1EE3283221A6483E00F8C7CD /* DefaultNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282521A6483E00F8C7CD /* DefaultNetworker.swift */; };
+		1EE3283321A6483E00F8C7CD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282621A6483E00F8C7CD /* Request.swift */; };
+		1EE3283421A6483E00F8C7CD /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282721A6483E00F8C7CD /* Notifications.swift */; };
+		1EE3283521A6483E00F8C7CD /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282821A6483E00F8C7CD /* Networker.swift */; };
+		1EE3283621A6483E00F8C7CD /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282921A6483E00F8C7CD /* StatusCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EE327F621A6457C00F8C7CD /* MAFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE327F921A6457C00F8C7CD /* MAFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAFFoundation.h; sourceTree = "<group>"; };
 		1EE327FA21A6457C00F8C7CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EE3281D21A6483D00F8C7CD /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		1EE3281E21A6483E00F8C7CD /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		1EE3281F21A6483E00F8C7CD /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		1EE3282021A6483E00F8C7CD /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		1EE3282121A6483E00F8C7CD /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		1EE3282221A6483E00F8C7CD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		1EE3282321A6483E00F8C7CD /* URLSessionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		1EE3282421A6483E00F8C7CD /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		1EE3282521A6483E00F8C7CD /* DefaultNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNetworker.swift; sourceTree = "<group>"; };
+		1EE3282621A6483E00F8C7CD /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		1EE3282721A6483E00F8C7CD /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		1EE3282821A6483E00F8C7CD /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		1EE3282921A6483E00F8C7CD /* StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +72,31 @@
 		1EE327F821A6457C00F8C7CD /* MAFFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				1EE327F921A6457C00F8C7CD /* MAFFoundation.h */,
 				1EE327FA21A6457C00F8C7CD /* Info.plist */,
+				1EE327F921A6457C00F8C7CD /* MAFFoundation.h */,
+				1EE3281C21A647E300F8C7CD /* Networking */,
 			);
 			path = MAFFoundation;
+			sourceTree = "<group>";
+		};
+		1EE3281C21A647E300F8C7CD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1EE3282121A6483E00F8C7CD /* APIError.swift */,
+				1EE3282421A6483E00F8C7CD /* Authenticator.swift */,
+				1EE3282521A6483E00F8C7CD /* DefaultNetworker.swift */,
+				1EE3282021A6483E00F8C7CD /* Future.swift */,
+				1EE3281F21A6483E00F8C7CD /* HttpMethod.swift */,
+				1EE3282821A6483E00F8C7CD /* Networker.swift */,
+				1EE3282721A6483E00F8C7CD /* Notifications.swift */,
+				1EE3282621A6483E00F8C7CD /* Request.swift */,
+				1EE3281E21A6483E00F8C7CD /* Response.swift */,
+				1EE3282221A6483E00F8C7CD /* Result.swift */,
+				1EE3282921A6483E00F8C7CD /* StatusCode.swift */,
+				1EE3281D21A6483D00F8C7CD /* Token.swift */,
+				1EE3282321A6483E00F8C7CD /* URLSessionProvider.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +142,7 @@
 				TargetAttributes = {
 					1EE327F521A6457C00F8C7CD = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +178,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE3283621A6483E00F8C7CD /* StatusCode.swift in Sources */,
+				1EE3282F21A6483E00F8C7CD /* Result.swift in Sources */,
+				1EE3283221A6483E00F8C7CD /* DefaultNetworker.swift in Sources */,
+				1EE3283421A6483E00F8C7CD /* Notifications.swift in Sources */,
+				1EE3283121A6483E00F8C7CD /* Authenticator.swift in Sources */,
+				1EE3282B21A6483E00F8C7CD /* Response.swift in Sources */,
+				1EE3282C21A6483E00F8C7CD /* HttpMethod.swift in Sources */,
+				1EE3282D21A6483E00F8C7CD /* Future.swift in Sources */,
+				1EE3282E21A6483E00F8C7CD /* APIError.swift in Sources */,
+				1EE3283321A6483E00F8C7CD /* Request.swift in Sources */,
+				1EE3283021A6483E00F8C7CD /* URLSessionProvider.swift in Sources */,
+				1EE3282A21A6483E00F8C7CD /* Token.swift in Sources */,
+				1EE3283521A6483E00F8C7CD /* Networker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +322,7 @@
 		1EE327FF21A6457C00F8C7CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mafsoftware.MAFFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +349,7 @@
 		1EE3280021A6457C00F8C7CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
