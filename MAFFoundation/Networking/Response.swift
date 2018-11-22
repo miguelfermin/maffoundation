@@ -1,6 +1,6 @@
 //
 //  Response.swift
-//  APISwift
+//  MAFFoundation
 //
 //  Created by Miguel Fermin on 8/9/18.
 //  Copyright © 2018 MAF Software LLC. All rights reserved.

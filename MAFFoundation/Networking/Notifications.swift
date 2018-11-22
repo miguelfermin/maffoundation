@@ -1,6 +1,6 @@
 //
 //  Notifications.swift
-//  APISwift
+//  MAFFoundation
 //
 //  Created by Miguel Fermin on 9/10/18.
 //  Copyright © 2018 MAF Software LLC. All rights reserved.
