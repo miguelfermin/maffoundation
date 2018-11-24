@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E12FBA921A9AC30005D5DA6 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12FBA821A9AC30005D5DA6 /* Date+Extensions.swift */; };
 		1ED955F821A7384100FEAE13 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED955F721A7384100FEAE13 /* Dispatch.swift */; };
 		1EE327FB21A6457C00F8C7CD /* MAFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE327F921A6457C00F8C7CD /* MAFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EE3282A21A6483E00F8C7CD /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3281D21A6483D00F8C7CD /* Token.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E12FBA821A9AC30005D5DA6 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		1ED955F721A7384100FEAE13 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		1EE327F621A6457C00F8C7CD /* MAFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE327F921A6457C00F8C7CD /* MAFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAFFoundation.h; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E12FBA721A9AC09005D5DA6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E12FBA821A9AC30005D5DA6 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1ED955F621A736A100FEAE13 /* Concurrency */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 				1EE327F921A6457C00F8C7CD /* MAFFoundation.h */,
 				1EE327FA21A6457C00F8C7CD /* Info.plist */,
 				1ED955F621A736A100FEAE13 /* Concurrency */,
+				1E12FBA721A9AC09005D5DA6 /* Extensions */,
 				1EE3281C21A647E300F8C7CD /* Networking */,
 			);
 			path = MAFFoundation;
@@ -197,6 +208,7 @@
 				1EE3282B21A6483E00F8C7CD /* Response.swift in Sources */,
 				1EE3282C21A6483E00F8C7CD /* HttpMethod.swift in Sources */,
 				1EE3282D21A6483E00F8C7CD /* Future.swift in Sources */,
+				1E12FBA921A9AC30005D5DA6 /* Date+Extensions.swift in Sources */,
 				1EE3282E21A6483E00F8C7CD /* APIError.swift in Sources */,
 				1EE3283321A6483E00F8C7CD /* Request.swift in Sources */,
 				1EE3283021A6483E00F8C7CD /* URLSessionProvider.swift in Sources */,
