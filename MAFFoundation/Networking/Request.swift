@@ -21,7 +21,7 @@ public struct Request {
     ///   - url: The destination URL.
     ///   - httpMethod: The HTTP method to use.
     ///   - headers: (Optional) Custom HTTP headers to use on this request.
-    ///     If provided, default APIToken authentication is skipped.
+    ///     If provided, default authentication is skipped.
     public init(url: URL, httpMethod: HttpMethod = .get, headers: [String: String]? = nil) {
         self.url = url
         self.httpMethod = httpMethod
@@ -37,10 +37,9 @@ public struct Request {
         return request
     }
     
-    func urlRequest(token: Token) -> URLRequest {
+    func urlRequest(headers: [String : String]) -> URLRequest {
         var request = URLRequest(url: url)
         request.httpMethod = httpMethod.string
-        let headers = ["Content-Type": "application/json", "Authorization": "Token \(token.id)"]
         request.allHTTPHeaderFields = headers
         printCurl(request)
         return request

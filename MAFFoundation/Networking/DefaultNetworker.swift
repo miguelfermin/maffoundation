@@ -29,14 +29,14 @@ public extension DefaultNetworker {
             return
         }
         
-        authenticator.getAPIToken { token in
-            guard let token = token else {
+        authenticator.getApiHeaders { headers in
+            guard let headers = headers else {
                 let error = APIError(code: .unauthorized)
                 self.handle(data: nil, error: error, completion: completion)
                 return
             }
             
-            let urlRequest = request.urlRequest(token: token)
+            let urlRequest = request.urlRequest(headers: headers)
             self.send(urlRequest, method: request.httpMethod, completion: completion)
         }
     }
