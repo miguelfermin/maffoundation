@@ -55,6 +55,7 @@ public extension DefaultNetworker {
             
             do {
                 let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
                 let result = try decoder.decode(T.self, from: data)
                 completion(.success(result))
             } catch {

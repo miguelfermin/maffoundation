@@ -11,5 +11,5 @@ import Foundation
 /// API related notifications.
 public struct Notifications {
     /// Posted when authentication is required.
-    public static let authRequired = NSNotification.Name("com.mafsoftware.apiswift.authRequired")
+    public static let authRequired = NSNotification.Name("com.mafsoftware.MAFFoundation.authRequired")
 }
