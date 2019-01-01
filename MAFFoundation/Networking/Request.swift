@@ -52,12 +52,10 @@ public struct Request {
             return
         }
         
-        var curl = "curl -X \(method) \\\n"
-        curl.append("\(url) \\\n")
-        
+        var curl = "curl -X \(method) \(url)\n"
         if let headers = request.allHTTPHeaderFields {
             for (key, val) in headers {
-                curl.append("-H '\(key): \(val)' \\\n")
+                curl.append("-H '\(key): \(val)'\\\n")
             }
         }
         
