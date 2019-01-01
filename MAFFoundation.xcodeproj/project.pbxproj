@@ -23,6 +23,7 @@
 		1EE3283421A6483E00F8C7CD /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282721A6483E00F8C7CD /* Notifications.swift */; };
 		1EE3283521A6483E00F8C7CD /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282821A6483E00F8C7CD /* Networker.swift */; };
 		1EE3283621A6483E00F8C7CD /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282921A6483E00F8C7CD /* StatusCode.swift */; };
+		1EE6314321DBEB6D0018C482 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE6314221DBEB6D0018C482 /* Data+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		1EE3282721A6483E00F8C7CD /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		1EE3282821A6483E00F8C7CD /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		1EE3282921A6483E00F8C7CD /* StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		1EE6314221DBEB6D0018C482 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		1E12FBA721A9AC09005D5DA6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1EE6314221DBEB6D0018C482 /* Data+Extensions.swift */,
 				1E12FBA821A9AC30005D5DA6 /* Date+Extensions.swift */,
 				1E7B76CF21ACABB400D59B2C /* Encodable+Extensions.swift */,
 			);
@@ -205,6 +208,7 @@
 				1EE3283221A6483E00F8C7CD /* DefaultNetworker.swift in Sources */,
 				1EE3283421A6483E00F8C7CD /* Notifications.swift in Sources */,
 				1EE3283121A6483E00F8C7CD /* Authenticator.swift in Sources */,
+				1EE6314321DBEB6D0018C482 /* Data+Extensions.swift in Sources */,
 				1EE3282B21A6483E00F8C7CD /* Response.swift in Sources */,
 				1EE3282C21A6483E00F8C7CD /* HttpMethod.swift in Sources */,
 				1EE3282D21A6483E00F8C7CD /* Future.swift in Sources */,
