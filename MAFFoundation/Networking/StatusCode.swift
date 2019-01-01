@@ -136,7 +136,7 @@ public enum StatusCode: Int {
     /// The 520 error is used as a "catch-all response for when the origin server returns something
     /// unexpected", listing connection resets, large headers, and empty or invalid responses as
     /// common triggers.
-    case unknownError = 520
+    case unknown = 520
     
     // MARK: Custom Error Codes
     
@@ -210,7 +210,7 @@ public enum StatusCode: Int {
         case .loopDetected:                     return "Loop Detected"
         case .notExtended:                      return "Not Extended"
         case .networkAuthenticationRequired:    return "Network Authentication Required"
-        case .unknownError:                     return "Unknown Error"
+        case .unknown:                          return "Unknown Error"
         case .noPayload:                        return "No Payload"
         case .decodeFailed:                     return "Decode Failed"
         case .adminsOnly:                       return "Admins Only"
