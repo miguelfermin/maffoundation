@@ -24,6 +24,7 @@
 		1EE3283521A6483E00F8C7CD /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282821A6483E00F8C7CD /* Networker.swift */; };
 		1EE3283621A6483E00F8C7CD /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282921A6483E00F8C7CD /* StatusCode.swift */; };
 		1EE6314321DBEB6D0018C482 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE6314221DBEB6D0018C482 /* Data+Extensions.swift */; };
+		1EEB868721DE872600C58270 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB868621DE872600C58270 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		1EE3282821A6483E00F8C7CD /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		1EE3282921A6483E00F8C7CD /* StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
 		1EE6314221DBEB6D0018C482 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		1EEB868621DE872600C58270 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				1EE6314221DBEB6D0018C482 /* Data+Extensions.swift */,
 				1E12FBA821A9AC30005D5DA6 /* Date+Extensions.swift */,
 				1E7B76CF21ACABB400D59B2C /* Encodable+Extensions.swift */,
+				1EEB868621DE872600C58270 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				1E12FBA921A9AC30005D5DA6 /* Date+Extensions.swift in Sources */,
 				1EE3282E21A6483E00F8C7CD /* APIError.swift in Sources */,
 				1EE3283321A6483E00F8C7CD /* Request.swift in Sources */,
+				1EEB868721DE872600C58270 /* String+Extensions.swift in Sources */,
 				1EE3283021A6483E00F8C7CD /* URLSessionProvider.swift in Sources */,
 				1E7B76D021ACABB400D59B2C /* Encodable+Extensions.swift in Sources */,
 				1EE3283521A6483E00F8C7CD /* Networker.swift in Sources */,
