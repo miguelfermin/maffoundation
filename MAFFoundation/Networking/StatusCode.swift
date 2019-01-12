@@ -151,70 +151,69 @@ public enum StatusCode: Int {
     
     public var text: String {
         switch self {
-        case .continue:                         return "Continue"
-        case .switchingProtocols:               return "Switching Protocols"
-        case .processing:                       return "Processing"
-        case .ok:                               return "OK"
-        case .created:                          return "Created"
-        case .accepted:                         return "Accepted"
-        case .nonAuthoritativeInfo:             return "Non-Authoritative Info"
-        case .noContent:                        return "No Content"
-        case .resetContent:                     return "Reset Content"
-        case .partialContent:                   return "Partial Content"
-        case .multiStatus:                      return "Multi Status"
-        case .alreadyReported:                  return "Already Reported"
-        case .IMUsed:                           return "IM Used"
-        case .multipleChoices:                  return "Multiple Choices"
-        case .movedPermanently:                 return "Moved Permanently"
-        case .found:                            return "Found"
-        case .seeOther:                         return "See Other"
-        case .notModified:                      return "Not Modified"
-        case .useProxy:                         return "Use Proxy"
-        case .temporaryRedirect:                return "Temporary Redirect"
-        case .permanentRedirect:                return "Permanent Redirect"
-        case .badRequest:                       return "Bad Request"
-        case .unauthorized:                     return "Unauthorized"
-        case .paymentRequired:                  return "Payment Required"
-        case .forbidden:                        return "Forbidden"
-        case .notFound:                         return "Not Found"
-        case .methodNotAllowed:                 return "Method Not Allowed"
-        case .notAcceptable:                    return "Not Acceptable"
-        case .proxyAuthRequired:                return "Proxy AuthRequired"
-        case .requestTimeout:                   return "Request Timeout"
-        case .conflict:                         return "Conflict"
-        case .gone:                             return "Gone"
-        case .lengthRequired:                   return "Length Required"
-        case .preconditionFailed:               return "Precondition Failed"
-        case .requestEntityTooLarge:            return "Request Entity Too Large"
-        case .requestURITooLong:                return "Request URI Too Long"
-        case .unsupportedMediaType:             return "Unsupported Media Type"
-        case .requestedRangeNotSatisfiable:     return "Requested Range Not Satisfiable"
-        case .expectationFailed:                return "Expectation Failed"
-        case .teapot:                           return "Teapot"
-        case .unprocessableEntity:              return "Unprocessable Entity"
-        case .locked:                           return "Locked"
-        case .failedDependency:                 return "Failed Dependency"
-        case .upgradeRequired:                  return "Upgrade Required"
-        case .preconditionRequired:             return "Precondition Required"
-        case .tooManyRequests:                  return "Too Many Requests"
-        case .requestHeaderFieldsTooLarge:      return "Request Header Fields TooLarge"
-        case .unavailableForLegalReasons:       return "Unavailable For Legal Reasons"
-        case .internalServerError:              return "Internal Server Error"
-        case .notImplemented:                   return "Not Implemented"
-        case .badGateway:                       return "Bad Gateway"
-        case .serviceUnavailable:               return "Service Unavailable"
-        case .gatewayTimeout:                   return "Gateway Timeout"
-        case .httpVersionNotSupported:          return "HTTP Version Not Supported"
-        case .variantAlsoNegotiates:            return "Variant Also Negotiates"
-        case .insufficientStorage:              return "Insufficient Storage"
-        case .loopDetected:                     return "Loop Detected"
-        case .notExtended:                      return "Not Extended"
-        case .networkAuthenticationRequired:    return "Network Authentication Required"
-        case .unknown:                          return "Unknown Error"
-        case .noPayload:                        return "No Payload"
-        case .decodeFailed:                     return "Decode Failed"
-        case .adminsOnly:                       return "Admins Only"
+        case .continue:                         return NSLocalizedString("StatusCode/Continue", comment: "")
+        case .switchingProtocols:               return NSLocalizedString("StatusCode/Switching Protocols", comment: "")
+        case .processing:                       return NSLocalizedString("StatusCode/Processing", comment: "")
+        case .ok:                               return NSLocalizedString("StatusCode/OK", comment: "")
+        case .created:                          return NSLocalizedString("StatusCode/Created", comment: "")
+        case .accepted:                         return NSLocalizedString("StatusCode/Accepted", comment: "")
+        case .nonAuthoritativeInfo:             return NSLocalizedString("StatusCode/Non-Authoritative Info", comment: "")
+        case .noContent:                        return NSLocalizedString("StatusCode/No Content", comment: "")
+        case .resetContent:                     return NSLocalizedString("StatusCode/Reset Content", comment: "")
+        case .partialContent:                   return NSLocalizedString("StatusCode/Partial Content", comment: "")
+        case .multiStatus:                      return NSLocalizedString("StatusCode/Multi Status", comment: "")
+        case .alreadyReported:                  return NSLocalizedString("StatusCode/Already Reported", comment: "")
+        case .IMUsed:                           return NSLocalizedString("StatusCode/IM Used", comment: "")
+        case .multipleChoices:                  return NSLocalizedString("StatusCode/Multiple Choices", comment: "")
+        case .movedPermanently:                 return NSLocalizedString("StatusCode/Moved Permanently", comment: "")
+        case .found:                            return NSLocalizedString("StatusCode/Found", comment: "")
+        case .seeOther:                         return NSLocalizedString("StatusCode/See Other", comment: "")
+        case .notModified:                      return NSLocalizedString("StatusCode/Not Modified", comment: "")
+        case .useProxy:                         return NSLocalizedString("StatusCode/Use Proxy", comment: "")
+        case .temporaryRedirect:                return NSLocalizedString("StatusCode/Temporary Redirect", comment: "")
+        case .permanentRedirect:                return NSLocalizedString("StatusCode/Permanent Redirect", comment: "")
+        case .badRequest:                       return NSLocalizedString("StatusCode/Bad Request", comment: "")
+        case .unauthorized:                     return NSLocalizedString("StatusCode/Unauthorized", comment: "")
+        case .paymentRequired:                  return NSLocalizedString("StatusCode/Payment Required", comment: "")
+        case .forbidden:                        return NSLocalizedString("StatusCode/Forbidden", comment: "")
+        case .notFound:                         return NSLocalizedString("StatusCode/Not Found", comment: "")
+        case .methodNotAllowed:                 return NSLocalizedString("StatusCode/Method Not Allowed", comment: "")
+        case .notAcceptable:                    return NSLocalizedString("StatusCode/Not Acceptable", comment: "")
+        case .proxyAuthRequired:                return NSLocalizedString("StatusCode/Proxy AuthRequired", comment: "")
+        case .requestTimeout:                   return NSLocalizedString("StatusCode/Request Timeout", comment: "")
+        case .conflict:                         return NSLocalizedString("StatusCode/Conflict", comment: "")
+        case .gone:                             return NSLocalizedString("StatusCode/Gone", comment: "")
+        case .lengthRequired:                   return NSLocalizedString("StatusCode/Length Required", comment: "")
+        case .preconditionFailed:               return NSLocalizedString("StatusCode/Precondition Failed", comment: "")
+        case .requestEntityTooLarge:            return NSLocalizedString("StatusCode/Request Entity Too Large", comment: "")
+        case .requestURITooLong:                return NSLocalizedString("StatusCode/Request URI Too Long", comment: "")
+        case .unsupportedMediaType:             return NSLocalizedString("StatusCode/Unsupported Media Type", comment: "")
+        case .requestedRangeNotSatisfiable:     return NSLocalizedString("StatusCode/Requested Range Not Satisfiable", comment: "")
+        case .expectationFailed:                return NSLocalizedString("StatusCode/Expectation Failed", comment: "")
+        case .teapot:                           return NSLocalizedString("StatusCode/Teapot", comment: "")
+        case .unprocessableEntity:              return NSLocalizedString("StatusCode/Unprocessable Entity", comment: "")
+        case .locked:                           return NSLocalizedString("StatusCode/Locked", comment: "")
+        case .failedDependency:                 return NSLocalizedString("StatusCode/Failed Dependency", comment: "")
+        case .upgradeRequired:                  return NSLocalizedString("StatusCode/Upgrade Required", comment: "")
+        case .preconditionRequired:             return NSLocalizedString("StatusCode/Precondition Required", comment: "")
+        case .tooManyRequests:                  return NSLocalizedString("StatusCode/Too Many Requests", comment: "")
+        case .requestHeaderFieldsTooLarge:      return NSLocalizedString("StatusCode/Request Header Fields TooLarge", comment: "")
+        case .unavailableForLegalReasons:       return NSLocalizedString("StatusCode/Unavailable For Legal Reasons", comment: "")
+        case .internalServerError:              return NSLocalizedString("StatusCode/Internal Server Error", comment: "")
+        case .notImplemented:                   return NSLocalizedString("StatusCode/Not Implemented", comment: "")
+        case .badGateway:                       return NSLocalizedString("StatusCode/Bad Gateway", comment: "")
+        case .serviceUnavailable:               return NSLocalizedString("StatusCode/Service Unavailable", comment: "")
+        case .gatewayTimeout:                   return NSLocalizedString("StatusCode/Gateway Timeout", comment: "")
+        case .httpVersionNotSupported:          return NSLocalizedString("StatusCode/HTTP Version Not Supported", comment: "")
+        case .variantAlsoNegotiates:            return NSLocalizedString("StatusCode/Variant Also Negotiates", comment: "")
+        case .insufficientStorage:              return NSLocalizedString("StatusCode/Insufficient Storage", comment: "")
+        case .loopDetected:                     return NSLocalizedString("StatusCode/Loop Detected", comment: "")
+        case .notExtended:                      return NSLocalizedString("StatusCode/Not Extended", comment: "")
+        case .networkAuthenticationRequired:    return NSLocalizedString("StatusCode/Network Authentication Required", comment: "")
+        case .unknown:                          return NSLocalizedString("StatusCode/Unknown Error", comment: "")
+        case .noPayload:                        return NSLocalizedString("StatusCode/No Payload", comment: "")
+        case .decodeFailed:                     return NSLocalizedString("StatusCode/Decode Failed", comment: "")
+        case .adminsOnly:                       return NSLocalizedString("StatusCode/Admins Only", comment: "")
         }
     }
 }
-
