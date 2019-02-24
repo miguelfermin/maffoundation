@@ -11,6 +11,7 @@
 		1E7B76D021ACABB400D59B2C /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B76CF21ACABB400D59B2C /* Encodable+Extensions.swift */; };
 		1E87597321EA624700CF4D45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E87597521EA624700CF4D45 /* Localizable.strings */; };
 		1ED955F821A7384100FEAE13 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED955F721A7384100FEAE13 /* Dispatch.swift */; };
+		1EDD13BD2222F125006EFCD0 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD13BC2222F125006EFCD0 /* Localizable.swift */; };
 		1EE327FB21A6457C00F8C7CD /* MAFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE327F921A6457C00F8C7CD /* MAFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EE3282B21A6483E00F8C7CD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3281E21A6483E00F8C7CD /* Response.swift */; };
 		1EE3282C21A6483E00F8C7CD /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3281F21A6483E00F8C7CD /* HttpMethod.swift */; };
@@ -34,6 +35,7 @@
 		1E87597421EA624700CF4D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1E87597621EA625F00CF4D45 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1ED955F721A7384100FEAE13 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
+		1EDD13BC2222F125006EFCD0 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		1EE327F621A6457C00F8C7CD /* MAFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE327F921A6457C00F8C7CD /* MAFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAFFoundation.h; sourceTree = "<group>"; };
 		1EE327FA21A6457C00F8C7CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				1E87597521EA624700CF4D45 /* Localizable.strings */,
+				1EDD13BC2222F125006EFCD0 /* Localizable.swift */,
 			);
 			path = Localizations;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				1EE3283021A6483E00F8C7CD /* URLSessionProvider.swift in Sources */,
 				1E7B76D021ACABB400D59B2C /* Encodable+Extensions.swift in Sources */,
 				1EE3283521A6483E00F8C7CD /* Networker.swift in Sources */,
+				1EDD13BD2222F125006EFCD0 /* Localizable.swift in Sources */,
 				1ED955F821A7384100FEAE13 /* Dispatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
