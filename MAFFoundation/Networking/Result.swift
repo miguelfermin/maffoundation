@@ -17,4 +17,12 @@ import Foundation
 public enum Result<T> {
     case success(T)
     case failure(APIError)
+    
+    /// The successful result value.
+    public var successValue: T? {
+        switch self {
+        case .success(let value): return value
+        case .failure: return nil
+        }
+    }
 }
