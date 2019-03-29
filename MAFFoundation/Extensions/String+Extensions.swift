@@ -42,7 +42,7 @@ extension String {
         var num = replacingOccurrences( of: "[^0-9]", with: "", options: .regularExpression)
         for idx in 0 ..< pattern.count {
             guard idx < num.count else { return num }
-            let stringIndex = String.Index(encodedOffset: idx)
+            let stringIndex = String.Index(utf16Offset: idx, in: num)
             let patternCharacter = pattern.rawValue[stringIndex]
             guard patternCharacter != PhonePattern.char else { continue }
             num.insert(patternCharacter, at: stringIndex)
@@ -50,5 +50,3 @@ extension String {
         return num
     }
 }
-
-// MARK: -  ...
