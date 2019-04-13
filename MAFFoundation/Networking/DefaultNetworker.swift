@@ -59,7 +59,7 @@ public extension DefaultNetworker {
                 let result = try decoder.decode(T.self, from: data)
                 completion(.success(result))
             } catch {
-                let err = APIError(code: .decodeFailed, message: "\(error.localizedDescription)", data: data)
+                let err = APIError(code: .decodeFailed, message: "\(error.localizedDescription)", data: data, error: error)
                 completion(.failure(err))
             }
         }
