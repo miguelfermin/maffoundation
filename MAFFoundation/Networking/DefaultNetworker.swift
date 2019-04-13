@@ -74,11 +74,16 @@ public extension DefaultNetworker {
 extension DefaultNetworker {
     
     func send(_ request: URLRequest, method: HttpMethod, completion: @escaping APICompletion) {
-        if let data = method.data, method != .get {
-            upload(request: request, data: data, completion: completion)
-        } else {
+        if method == .get {
             download(request: request, completion: completion)
+            return
         }
+        guard let data = method.data else {
+            let message = "Data encoding error. Caught at client side"
+            completion(nil, APIError(code: .badRequest, message: message))
+            return
+        }
+        upload(request: request, data: data, completion: completion)
     }
     
     func upload(request: URLRequest, data: Data, completion: @escaping APICompletion) {
