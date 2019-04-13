@@ -41,7 +41,7 @@ public extension DefaultNetworker {
         }
     }
     
-    func send<T: Decodable>(_ request: Request, completion: @escaping (Result<T>) ->Void) {
+    func send<T: Decodable>(_ request: Request, completion: @escaping (Result<T, APIError>) ->Void) {
         send(request) { (data, error) in
             if let error = error {
                 completion(.failure(error))

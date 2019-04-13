@@ -41,7 +41,7 @@ public protocol Networker {
     /// - Parameters:
     ///   - request: The Request to send.
     ///   - completion: The closure invoked upon completion.
-    func send<T: Decodable>(_ request: Request, completion: @escaping (Result<T>) ->Void)
+    func send<T: Decodable>(_ request: Request, completion: @escaping (Result<T, APIError>) ->Void)
     
     /// Sends the specified Request to a service (API).
     ///

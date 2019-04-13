@@ -17,7 +17,6 @@
 		1EE3282C21A6483E00F8C7CD /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3281F21A6483E00F8C7CD /* HttpMethod.swift */; };
 		1EE3282D21A6483E00F8C7CD /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282021A6483E00F8C7CD /* Future.swift */; };
 		1EE3282E21A6483E00F8C7CD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282121A6483E00F8C7CD /* APIError.swift */; };
-		1EE3282F21A6483E00F8C7CD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282221A6483E00F8C7CD /* Result.swift */; };
 		1EE3283021A6483E00F8C7CD /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282321A6483E00F8C7CD /* URLSessionProvider.swift */; };
 		1EE3283121A6483E00F8C7CD /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282421A6483E00F8C7CD /* Authenticator.swift */; };
 		1EE3283221A6483E00F8C7CD /* DefaultNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282521A6483E00F8C7CD /* DefaultNetworker.swift */; };
@@ -43,7 +42,6 @@
 		1EE3281F21A6483E00F8C7CD /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		1EE3282021A6483E00F8C7CD /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
 		1EE3282121A6483E00F8C7CD /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		1EE3282221A6483E00F8C7CD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		1EE3282321A6483E00F8C7CD /* URLSessionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
 		1EE3282421A6483E00F8C7CD /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
 		1EE3282521A6483E00F8C7CD /* DefaultNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNetworker.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 				1EE3282721A6483E00F8C7CD /* Notifications.swift */,
 				1EE3282621A6483E00F8C7CD /* Request.swift */,
 				1EE3281E21A6483E00F8C7CD /* Response.swift */,
-				1EE3282221A6483E00F8C7CD /* Result.swift */,
 				1EE3282921A6483E00F8C7CD /* StatusCode.swift */,
 				1EE3282321A6483E00F8C7CD /* URLSessionProvider.swift */,
 			);
@@ -225,7 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EE3283621A6483E00F8C7CD /* StatusCode.swift in Sources */,
-				1EE3282F21A6483E00F8C7CD /* Result.swift in Sources */,
 				1EE3283221A6483E00F8C7CD /* DefaultNetworker.swift in Sources */,
 				1EE3283421A6483E00F8C7CD /* Notifications.swift in Sources */,
 				1EE3283121A6483E00F8C7CD /* Authenticator.swift in Sources */,
