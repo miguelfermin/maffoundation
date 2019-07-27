@@ -30,11 +30,7 @@ public struct Request {
     
     var customHeadersUrlRequest: URLRequest? {
         guard let headers = headers else { return nil }
-        var request = URLRequest(url: url)
-        request.httpMethod = httpMethod.string
-        request.allHTTPHeaderFields = headers
-        printCurl(request)
-        return request
+        return urlRequest(headers: headers)
     }
     
     func urlRequest(headers: [String : String]) -> URLRequest {

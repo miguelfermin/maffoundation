@@ -1,5 +1,5 @@
 //
-//  DefaultNetworker.swift
+//  NetworkerDefault.swift
 //  MAFFoundation
 //
 //  Created by Miguel Fermin on 9/11/18.
@@ -9,11 +9,10 @@
 import Foundation
 
 /// The default *Networker*.
-public struct DefaultNetworker: Networker {
+public struct NetworkerDefault: Networker {
     public let authenticator: Authenticator
     
-    /// Initializes a DefaultNetworker with its Authenticator.
-    ///
+    /// Initializes a NetworkerDefault with its Authenticator.
     /// - Parameter authenticator: The default authenticator.
     public init(authenticator: Authenticator) {
         self.authenticator = authenticator
@@ -21,7 +20,7 @@ public struct DefaultNetworker: Networker {
 }
 
 // MARK: - API
-public extension DefaultNetworker {
+public extension NetworkerDefault {
     
     func send(_ request: Request, completion: @escaping APICompletion) {
         if let urlRequest = request.customHeadersUrlRequest {
@@ -64,14 +63,10 @@ public extension DefaultNetworker {
             }
         }
     }
-    
-    func send<T: Decodable>(_ request: Request) -> Future<T> {
-        return Future<T> { r in self.send(request) { r($0) } }
-    }
 }
 
 // MARK: - Internal
-extension DefaultNetworker {
+extension NetworkerDefault {
     
     func send(_ request: URLRequest, method: HttpMethod, completion: @escaping APICompletion) {
         if method == .get {

@@ -49,3 +49,9 @@ public protocol Networker {
     /// - Returns: A Future that will provide the Result upon completion.
     func send<T: Decodable>(_ request: Request) -> Future<T>
 }
+
+public extension Networker {
+    func send<T: Decodable>(_ request: Request) -> Future<T> {
+        return Future<T> { r in self.send(request) { r($0) } }
+    }
+}

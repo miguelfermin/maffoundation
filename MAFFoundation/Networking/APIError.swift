@@ -78,4 +78,3 @@ private extension URLResponse {
         return (200...299).contains((self as? HTTPURLResponse)?.statusCode ?? 1)
     }
 }
-
