@@ -11,17 +11,20 @@ import Foundation
 /// The default *Networker*.
 public struct NetworkerDefault: Networker {
     public let authenticator: Authenticator
+    private let session: URLSession
     
     /// Initializes a NetworkerDefault with its Authenticator.
     /// - Parameter authenticator: The default authenticator.
-    public init(authenticator: Authenticator) {
+    /// - Parameter timeout: The request timeout interval for all tasks. The default value is 60 seconds.
+    public init(authenticator: Authenticator, timeout: TimeInterval = 60 ) {
         self.authenticator = authenticator
+        self.session = URLSessionProvider.shared.session
+        session.configuration.timeoutIntervalForRequest = timeout
     }
 }
 
 // MARK: - API
 public extension NetworkerDefault {
-    
     func send(_ request: Request, completion: @escaping APICompletion) {
         if let urlRequest = request.customHeadersUrlRequest {
             send(urlRequest, method: request.httpMethod, completion: completion)
@@ -67,7 +70,6 @@ public extension NetworkerDefault {
 
 // MARK: - Internal
 extension NetworkerDefault {
-    
     func send(_ request: URLRequest, method: HttpMethod, completion: @escaping APICompletion) {
         if method == .get {
             download(request: request, completion: completion)
@@ -82,14 +84,12 @@ extension NetworkerDefault {
     }
     
     func upload(request: URLRequest, data: Data, completion: @escaping APICompletion) {
-        let session = URLSessionProvider.shared.session
         session.uploadTask(with: request, from: data) { (data, response, error) in
             self.handle(data: data, response: response, error: error, completion: completion)
             }.resume()
     }
     
     func download(request: URLRequest, completion: @escaping APICompletion) {
-        let session = URLSessionProvider.shared.session
         session.dataTask(with: request){ (data, response, error) in
             self.handle(data: data, response: response, error: error, completion: completion)
             }.resume()
