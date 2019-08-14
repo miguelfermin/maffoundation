@@ -24,46 +24,19 @@ public struct NetworkerDefault: Networker {
 }
 
 // MARK: - API
-public extension NetworkerDefault {
-    func send(_ request: Request, completion: @escaping APICompletion) {
+extension NetworkerDefault {
+    public func send(_ request: Request, completion: @escaping APICompletion) {
         if let urlRequest = request.customHeadersUrlRequest {
             send(urlRequest, method: request.httpMethod, completion: completion)
             return
         }
-        
-        authenticator.getApiHeaders { headers in
+        authenticator.httpHeaders { headers in
             guard let headers = headers else {
-                let error = APIError(code: .unauthorized)
-                self.handle(data: nil, error: error, completion: completion)
+                self.handle(data: nil, error: APIError(code: .unauthorized), completion: completion)
                 return
             }
-            
             let urlRequest = request.urlRequest(headers: headers)
             self.send(urlRequest, method: request.httpMethod, completion: completion)
-        }
-    }
-    
-    func send<T: Decodable>(_ request: Request, completion: @escaping (Result<T, APIError>) ->Void) {
-        send(request) { (data, error) in
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-            
-            guard let data = data else {
-                completion(.failure(APIError(code: .noPayload)))
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                decoder.dateDecodingStrategy = .iso8601
-                let result = try decoder.decode(T.self, from: data)
-                completion(.success(result))
-            } catch {
-                let err = APIError(code: .decodeFailed, message: "\(error.localizedDescription)", data: data, error: error)
-                completion(.failure(err))
-            }
         }
     }
 }
@@ -86,15 +59,17 @@ extension NetworkerDefault {
     func upload(request: URLRequest, data: Data, completion: @escaping APICompletion) {
         session.uploadTask(with: request, from: data) { (data, response, error) in
             self.handle(data: data, response: response, error: error, completion: completion)
-            }.resume()
+        }.resume()
     }
     
     func download(request: URLRequest, completion: @escaping APICompletion) {
         session.dataTask(with: request){ (data, response, error) in
             self.handle(data: data, response: response, error: error, completion: completion)
-            }.resume()
+        }.resume()
     }
-    
+}
+
+extension NetworkerDefault {
     func handle(data: Data?, response: URLResponse?, error: Error?, completion: @escaping APICompletion) {
         if let error = APIError(data: data, response: response, error: error) {
             handle(data: data, error: error, completion: completion)
