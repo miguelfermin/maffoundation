@@ -7,39 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E12FBA921A9AC30005D5DA6 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12FBA821A9AC30005D5DA6 /* Date+Extensions.swift */; };
+		1E7B76D021ACABB400D59B2C /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B76CF21ACABB400D59B2C /* Encodable+Extensions.swift */; };
+		1E87597321EA624700CF4D45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E87597521EA624700CF4D45 /* Localizable.strings */; };
+		1ED955F821A7384100FEAE13 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED955F721A7384100FEAE13 /* Dispatch.swift */; };
+		1EDD13BD2222F125006EFCD0 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD13BC2222F125006EFCD0 /* Localizable.swift */; };
 		1EE327FB21A6457C00F8C7CD /* MAFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE327F921A6457C00F8C7CD /* MAFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EE3282A21A6483E00F8C7CD /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3281D21A6483D00F8C7CD /* Token.swift */; };
 		1EE3282B21A6483E00F8C7CD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3281E21A6483E00F8C7CD /* Response.swift */; };
 		1EE3282C21A6483E00F8C7CD /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3281F21A6483E00F8C7CD /* HttpMethod.swift */; };
 		1EE3282D21A6483E00F8C7CD /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282021A6483E00F8C7CD /* Future.swift */; };
 		1EE3282E21A6483E00F8C7CD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282121A6483E00F8C7CD /* APIError.swift */; };
-		1EE3282F21A6483E00F8C7CD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282221A6483E00F8C7CD /* Result.swift */; };
 		1EE3283021A6483E00F8C7CD /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282321A6483E00F8C7CD /* URLSessionProvider.swift */; };
 		1EE3283121A6483E00F8C7CD /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282421A6483E00F8C7CD /* Authenticator.swift */; };
-		1EE3283221A6483E00F8C7CD /* DefaultNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282521A6483E00F8C7CD /* DefaultNetworker.swift */; };
+		1EE3283221A6483E00F8C7CD /* NetworkerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282521A6483E00F8C7CD /* NetworkerDefault.swift */; };
 		1EE3283321A6483E00F8C7CD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282621A6483E00F8C7CD /* Request.swift */; };
 		1EE3283421A6483E00F8C7CD /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282721A6483E00F8C7CD /* Notifications.swift */; };
 		1EE3283521A6483E00F8C7CD /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282821A6483E00F8C7CD /* Networker.swift */; };
 		1EE3283621A6483E00F8C7CD /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3282921A6483E00F8C7CD /* StatusCode.swift */; };
+		1EE6314321DBEB6D0018C482 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE6314221DBEB6D0018C482 /* Data+Extensions.swift */; };
+		1EEB868721DE872600C58270 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB868621DE872600C58270 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E12FBA821A9AC30005D5DA6 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		1E7B76CF21ACABB400D59B2C /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		1E87597421EA624700CF4D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1E87597621EA625F00CF4D45 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1ED955F721A7384100FEAE13 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
+		1EDD13BC2222F125006EFCD0 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		1EE327F621A6457C00F8C7CD /* MAFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE327F921A6457C00F8C7CD /* MAFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAFFoundation.h; sourceTree = "<group>"; };
 		1EE327FA21A6457C00F8C7CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EE3281D21A6483D00F8C7CD /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		1EE3281E21A6483E00F8C7CD /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		1EE3281F21A6483E00F8C7CD /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		1EE3282021A6483E00F8C7CD /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
 		1EE3282121A6483E00F8C7CD /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		1EE3282221A6483E00F8C7CD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		1EE3282321A6483E00F8C7CD /* URLSessionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
 		1EE3282421A6483E00F8C7CD /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
-		1EE3282521A6483E00F8C7CD /* DefaultNetworker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNetworker.swift; sourceTree = "<group>"; };
+		1EE3282521A6483E00F8C7CD /* NetworkerDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkerDefault.swift; sourceTree = "<group>"; };
 		1EE3282621A6483E00F8C7CD /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		1EE3282721A6483E00F8C7CD /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		1EE3282821A6483E00F8C7CD /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		1EE3282921A6483E00F8C7CD /* StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		1EE6314221DBEB6D0018C482 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		1EEB868621DE872600C58270 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E12FBA721A9AC09005D5DA6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1EE6314221DBEB6D0018C482 /* Data+Extensions.swift */,
+				1E12FBA821A9AC30005D5DA6 /* Date+Extensions.swift */,
+				1E7B76CF21ACABB400D59B2C /* Encodable+Extensions.swift */,
+				1EEB868621DE872600C58270 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1E87597021EA621500CF4D45 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				1E87597521EA624700CF4D45 /* Localizable.strings */,
+				1EDD13BC2222F125006EFCD0 /* Localizable.swift */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		1ED955F621A736A100FEAE13 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				1EE3282021A6483E00F8C7CD /* Future.swift */,
+				1ED955F721A7384100FEAE13 /* Dispatch.swift */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
 		1EE327EC21A6457C00F8C7CD = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +112,11 @@
 		1EE327F821A6457C00F8C7CD /* MAFFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				1EE327FA21A6457C00F8C7CD /* Info.plist */,
 				1EE327F921A6457C00F8C7CD /* MAFFoundation.h */,
+				1EE327FA21A6457C00F8C7CD /* Info.plist */,
+				1ED955F621A736A100FEAE13 /* Concurrency */,
+				1E12FBA721A9AC09005D5DA6 /* Extensions */,
+				1E87597021EA621500CF4D45 /* Localizations */,
 				1EE3281C21A647E300F8C7CD /* Networking */,
 			);
 			path = MAFFoundation;
@@ -84,16 +127,13 @@
 			children = (
 				1EE3282121A6483E00F8C7CD /* APIError.swift */,
 				1EE3282421A6483E00F8C7CD /* Authenticator.swift */,
-				1EE3282521A6483E00F8C7CD /* DefaultNetworker.swift */,
-				1EE3282021A6483E00F8C7CD /* Future.swift */,
 				1EE3281F21A6483E00F8C7CD /* HttpMethod.swift */,
 				1EE3282821A6483E00F8C7CD /* Networker.swift */,
+				1EE3282521A6483E00F8C7CD /* NetworkerDefault.swift */,
 				1EE3282721A6483E00F8C7CD /* Notifications.swift */,
 				1EE3282621A6483E00F8C7CD /* Request.swift */,
 				1EE3281E21A6483E00F8C7CD /* Response.swift */,
-				1EE3282221A6483E00F8C7CD /* Result.swift */,
 				1EE3282921A6483E00F8C7CD /* StatusCode.swift */,
-				1EE3281D21A6483D00F8C7CD /* Token.swift */,
 				1EE3282321A6483E00F8C7CD /* URLSessionProvider.swift */,
 			);
 			path = Networking;
@@ -142,7 +182,7 @@
 				TargetAttributes = {
 					1EE327F521A6457C00F8C7CD = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -152,6 +192,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"es-419",
+				Base,
 			);
 			mainGroup = 1EE327EC21A6457C00F8C7CD;
 			productRefGroup = 1EE327F721A6457C00F8C7CD /* Products */;
@@ -168,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E87597321EA624700CF4D45 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,28 +222,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EE3283621A6483E00F8C7CD /* StatusCode.swift in Sources */,
-				1EE3282F21A6483E00F8C7CD /* Result.swift in Sources */,
-				1EE3283221A6483E00F8C7CD /* DefaultNetworker.swift in Sources */,
+				1EE3283221A6483E00F8C7CD /* NetworkerDefault.swift in Sources */,
 				1EE3283421A6483E00F8C7CD /* Notifications.swift in Sources */,
 				1EE3283121A6483E00F8C7CD /* Authenticator.swift in Sources */,
+				1EE6314321DBEB6D0018C482 /* Data+Extensions.swift in Sources */,
 				1EE3282B21A6483E00F8C7CD /* Response.swift in Sources */,
 				1EE3282C21A6483E00F8C7CD /* HttpMethod.swift in Sources */,
 				1EE3282D21A6483E00F8C7CD /* Future.swift in Sources */,
+				1E12FBA921A9AC30005D5DA6 /* Date+Extensions.swift in Sources */,
 				1EE3282E21A6483E00F8C7CD /* APIError.swift in Sources */,
 				1EE3283321A6483E00F8C7CD /* Request.swift in Sources */,
+				1EEB868721DE872600C58270 /* String+Extensions.swift in Sources */,
 				1EE3283021A6483E00F8C7CD /* URLSessionProvider.swift in Sources */,
-				1EE3282A21A6483E00F8C7CD /* Token.swift in Sources */,
+				1E7B76D021ACABB400D59B2C /* Encodable+Extensions.swift in Sources */,
 				1EE3283521A6483E00F8C7CD /* Networker.swift in Sources */,
+				1EDD13BD2222F125006EFCD0 /* Localizable.swift in Sources */,
+				1ED955F821A7384100FEAE13 /* Dispatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1E87597521EA624700CF4D45 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E87597421EA624700CF4D45 /* en */,
+				1E87597621EA625F00CF4D45 /* es-419 */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1EE327FC21A6457C00F8C7CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -249,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -265,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -307,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -337,11 +398,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mafsoftware.MAFFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -364,10 +426,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mafsoftware.MAFFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

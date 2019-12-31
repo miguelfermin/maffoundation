@@ -10,23 +10,23 @@ import Foundation
 
 final public class Future<T> {
     private let queue: DispatchQueue
-    private var callbacks: [(Result<T>) -> ()] = []
-    private var result: Result<T>?
+    private var callbacks: [(Result<T, APIError>) -> ()] = []
+    private var result: Result<T, APIError>?
     
-    public init(compute: (@escaping (Result<T>) -> Void) -> Void) {
-        let label = "com.mafsoftware.APISwift.Future.\(UUID().uuidString)"
+    public init(compute: (@escaping (Result<T, APIError>) -> Void) -> Void) {
+        let label = "com.mafsoftware.MAFFoundation.Future.\(UUID().uuidString)"
         queue = DispatchQueue(label: label, attributes: .concurrent)
         queue.sync { compute(self.send) }
     }
     
-    private func send(_ value: Result<T>) {
+    private func send(_ value: Result<T, APIError>) {
         assert(result == nil)
         result = value
         for callback in callbacks { callback(value) }
         callbacks = []
     }
     
-    final public func completionHandler(callback: @escaping (Result<T>) -> ()) {
+    final public func completionHandler(callback: @escaping (Result<T, APIError>) -> ()) {
         queue.sync {
             if let value = result {
                 DispatchQueue.main.async { callback(value) }

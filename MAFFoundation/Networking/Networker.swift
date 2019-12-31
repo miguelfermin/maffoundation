@@ -25,27 +25,43 @@ public protocol Networker {
     func send(_ request: Request, completion: @escaping APICompletion)
     
     /// Sends the specified Request to a service (API).
-    /// This version of *send(..)* user Codable to provide callers with the desired
+    /// This version of *send(..)* uses Codable to provide callers with the desired
     /// response model.
-    /// ```
-    /// // Here's an example on how to fetch an array of User models:
-    /// let request = Request(url: url)
-    /// networker.send(request) { (result: Result<[User]>) in
-    ///     switch result {
-    ///     case .success(let users): completion(.success(users))
-    ///     case .failure(let error): completion(.failure(error))
-    ///     }
-    /// }
-    /// ```
     ///
     /// - Parameters:
     ///   - request: The Request to send.
     ///   - completion: The closure invoked upon completion.
-    func send<T: Decodable>(_ request: Request, completion: @escaping (Result<T>) ->Void)
+    func send<T: Decodable>(_ request: Request, completion: @escaping (Result<T, APIError>) ->Void)
     
     /// Sends the specified Request to a service (API).
     ///
     /// - Parameter request: The Request to send.
     /// - Returns: A Future that will provide the Result upon completion.
     func send<T: Decodable>(_ request: Request) -> Future<T>
+}
+
+public extension Networker {
+    func send<T: Decodable>(_ request: Request) -> Future<T> {
+        return Future<T> { r in self.send(request) { r($0) } }
+    }
+    
+    func send<T: Decodable>(_ request: Request, completion: @escaping (Result<T, APIError>) ->Void) {
+        send(request) { (data, error) in
+            if let error = error {
+                completion(.failure(error)); return
+            }
+            guard let data = data else {
+                completion(.failure(APIError(code: .noPayload))); return
+            }
+            do {
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                let result = try decoder.decode(T.self, from: data)
+                completion(.success(result))
+            } catch {
+                let err = APIError(code: .decodeFailed, message: "\(error.localizedDescription)", data: data, error: error)
+                completion(.failure(err))
+            }
+        }
+    }
 }

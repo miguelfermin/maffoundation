@@ -1,0 +1,72 @@
+/* 
+  Localizable.strings
+  MAFFoundation
+
+  Created by Miguel Fermin on 1/12/19.
+  Copyright © 2019 MAF Software LLC. All rights reserved.
+*/
+
+// StatusCode
+"StatusCode/Continue" = "Continuar";
+"StatusCode/Switching Protocols" = "Protocolos de conmutación";
+"StatusCode/Processing" = "Procesamiento";
+"StatusCode/OK" = "OK";
+"StatusCode/Created" = "Creado";
+"StatusCode/Accepted" = "Aceptado";
+"StatusCode/Non-Authoritative Info" = "Información no autorizada";
+"StatusCode/No Content" = "Sin contenido";
+"StatusCode/Reset Content" = "Restablecer contenido";
+"StatusCode/Partial Content" = "Contenido parcial";
+"StatusCode/Multi Status" = "Estado Multi";
+"StatusCode/Already Reported" = "Ya informado";
+"StatusCode/IM Used" = "IM Used";
+"StatusCode/Multiple Choices" = "Múltiples opciones";
+"StatusCode/Moved Permanently" = "Movido permanentemente";
+"StatusCode/Found" = "Encontrado";
+"StatusCode/See Other" = "Ver otros";
+"StatusCode/Not Modified" = "No modificado";
+"StatusCode/Use Proxy" = "Usa proxy";
+"StatusCode/Temporary Redirect" = "Redireccionamiento temporal";
+"StatusCode/Permanent Redirect" = "Redirección permanente";
+"StatusCode/Bad Request" = "Solicitud incorrecta";
+"StatusCode/Unauthorized" = "No autorizado";
+"StatusCode/Payment Required" = "Pago requerido";
+"StatusCode/Forbidden" = "Prohibido";
+"StatusCode/Not Found" = "No encontrado";
+"StatusCode/Method Not Allowed" = "Método no permitido";
+"StatusCode/Not Acceptable" = "Inaceptable";
+"StatusCode/Proxy AuthRequired" = "Se requiere autenticación de proxy";
+"StatusCode/Request Timeout" = "Solicitud expiro";
+"StatusCode/Conflict" = "Conflicto";
+"StatusCode/Gone" = "Ido";
+"StatusCode/Length Required" = "Longitud requerida";
+"StatusCode/Precondition Failed" = "Condición previa Falló";
+"StatusCode/Request Entity Too Large" = "Solicitud de entidad demasiado grande";
+"StatusCode/Request URI Too Long" = "Solicitud de URI demasiado largo";
+"StatusCode/Unsupported Media Type" = "Tipo de soporte no compatible";
+"StatusCode/Requested Range Not Satisfiable" = "Rango solicitado no satisfactorio";
+"StatusCode/Expectation Failed" = "Expectativa fallida";
+"StatusCode/Teapot" = "Teapot";
+"StatusCode/Unprocessable Entity" = "Entidad no procesable";
+"StatusCode/Locked" = "Bloqueado";
+"StatusCode/Failed Dependency" = "Dependencia fallida";
+"StatusCode/Upgrade Required" = "Se requiere actualización";
+"StatusCode/Precondition Required" = "Condición previa requerida";
+"StatusCode/Too Many Requests" = "Demasiadas solicitudes";
+"StatusCode/Request Header Fields TooLarge" = "Campos de encabezado de solicitud demasiado grandes";
+"StatusCode/Unavailable For Legal Reasons" = "No disponible por razones legales";
+"StatusCode/Internal Server Error" = "Error de servidor interno";
+"StatusCode/Not Implemented" = "No se ha implementado";
+"StatusCode/Bad Gateway" = "Bad Gateway";
+"StatusCode/Service Unavailable" = "Servicio no disponible";
+"StatusCode/Gateway Timeout" = "Gateway Timeout";
+"StatusCode/HTTP Version Not Supported" = "Versión HTTP no soportada";
+"StatusCode/Variant Also Negotiates" = "La variante también negocia";
+"StatusCode/Insufficient Storage" = "Espacio insuficiente";
+"StatusCode/Loop Detected" = "Bucle detectado";
+"StatusCode/Not Extended" = "No extendido";
+"StatusCode/Network Authentication Required" = "Autenticación de red requerida";
+"StatusCode/Unknown Error" = "Error desconocido";
+"StatusCode/No Payload" = "No Payload";
+"StatusCode/Decode Failed" = "Descifrador Fallido";
+"StatusCode/Admins Only" = "Solo administradores";

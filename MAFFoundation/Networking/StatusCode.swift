@@ -136,7 +136,7 @@ public enum StatusCode: Int {
     /// The 520 error is used as a "catch-all response for when the origin server returns something
     /// unexpected", listing connection resets, large headers, and empty or invalid responses as
     /// common triggers.
-    case unknownError = 520
+    case unknown = 520
     
     // MARK: Custom Error Codes
     
@@ -151,70 +151,69 @@ public enum StatusCode: Int {
     
     public var text: String {
         switch self {
-        case .continue:                         return "Continue"
-        case .switchingProtocols:               return "Switching Protocols"
-        case .processing:                       return "Processing"
-        case .ok:                               return "OK"
-        case .created:                          return "Created"
-        case .accepted:                         return "Accepted"
-        case .nonAuthoritativeInfo:             return "Non-Authoritative Info"
-        case .noContent:                        return "No Content"
-        case .resetContent:                     return "Reset Content"
-        case .partialContent:                   return "Partial Content"
-        case .multiStatus:                      return "Multi Status"
-        case .alreadyReported:                  return "Already Reported"
-        case .IMUsed:                           return "IM Used"
-        case .multipleChoices:                  return "Multiple Choices"
-        case .movedPermanently:                 return "Moved Permanently"
-        case .found:                            return "Found"
-        case .seeOther:                         return "See Other"
-        case .notModified:                      return "Not Modified"
-        case .useProxy:                         return "Use Proxy"
-        case .temporaryRedirect:                return "Temporary Redirect"
-        case .permanentRedirect:                return "Permanent Redirect"
-        case .badRequest:                       return "Bad Request"
-        case .unauthorized:                     return "Unauthorized"
-        case .paymentRequired:                  return "Payment Required"
-        case .forbidden:                        return "Forbidden"
-        case .notFound:                         return "Not Found"
-        case .methodNotAllowed:                 return "Method Not Allowed"
-        case .notAcceptable:                    return "Not Acceptable"
-        case .proxyAuthRequired:                return "Proxy AuthRequired"
-        case .requestTimeout:                   return "Request Timeout"
-        case .conflict:                         return "Conflict"
-        case .gone:                             return "Gone"
-        case .lengthRequired:                   return "Length Required"
-        case .preconditionFailed:               return "Precondition Failed"
-        case .requestEntityTooLarge:            return "Request Entity Too Large"
-        case .requestURITooLong:                return "Request URI Too Long"
-        case .unsupportedMediaType:             return "Unsupported Media Type"
-        case .requestedRangeNotSatisfiable:     return "Requested Range Not Satisfiable"
-        case .expectationFailed:                return "Expectation Failed"
-        case .teapot:                           return "Teapot"
-        case .unprocessableEntity:              return "Unprocessable Entity"
-        case .locked:                           return "Locked"
-        case .failedDependency:                 return "Failed Dependency"
-        case .upgradeRequired:                  return "Upgrade Required"
-        case .preconditionRequired:             return "Precondition Required"
-        case .tooManyRequests:                  return "Too Many Requests"
-        case .requestHeaderFieldsTooLarge:      return "Request Header Fields TooLarge"
-        case .unavailableForLegalReasons:       return "Unavailable For Legal Reasons"
-        case .internalServerError:              return "Internal Server Error"
-        case .notImplemented:                   return "Not Implemented"
-        case .badGateway:                       return "Bad Gateway"
-        case .serviceUnavailable:               return "Service Unavailable"
-        case .gatewayTimeout:                   return "Gateway Timeout"
-        case .httpVersionNotSupported:          return "HTTP Version Not Supported"
-        case .variantAlsoNegotiates:            return "Variant Also Negotiates"
-        case .insufficientStorage:              return "Insufficient Storage"
-        case .loopDetected:                     return "Loop Detected"
-        case .notExtended:                      return "Not Extended"
-        case .networkAuthenticationRequired:    return "Network Authentication Required"
-        case .unknownError:                     return "Unknown Error"
-        case .noPayload:                        return "No Payload"
-        case .decodeFailed:                     return "Decode Failed"
-        case .adminsOnly:                       return "Admins Only"
+        case .continue:                         return Localized("StatusCode/Continue")
+        case .switchingProtocols:               return Localized("StatusCode/Switching Protocols")
+        case .processing:                       return Localized("StatusCode/Processing")
+        case .ok:                               return Localized("StatusCode/OK")
+        case .created:                          return Localized("StatusCode/Created")
+        case .accepted:                         return Localized("StatusCode/Accepted")
+        case .nonAuthoritativeInfo:             return Localized("StatusCode/Non-Authoritative Info")
+        case .noContent:                        return Localized("StatusCode/No Content")
+        case .resetContent:                     return Localized("StatusCode/Reset Content")
+        case .partialContent:                   return Localized("StatusCode/Partial Content")
+        case .multiStatus:                      return Localized("StatusCode/Multi Status")
+        case .alreadyReported:                  return Localized("StatusCode/Already Reported")
+        case .IMUsed:                           return Localized("StatusCode/IM Used")
+        case .multipleChoices:                  return Localized("StatusCode/Multiple Choices")
+        case .movedPermanently:                 return Localized("StatusCode/Moved Permanently")
+        case .found:                            return Localized("StatusCode/Found")
+        case .seeOther:                         return Localized("StatusCode/See Other")
+        case .notModified:                      return Localized("StatusCode/Not Modified")
+        case .useProxy:                         return Localized("StatusCode/Use Proxy")
+        case .temporaryRedirect:                return Localized("StatusCode/Temporary Redirect")
+        case .permanentRedirect:                return Localized("StatusCode/Permanent Redirect")
+        case .badRequest:                       return Localized("StatusCode/Bad Request")
+        case .unauthorized:                     return Localized("StatusCode/Unauthorized")
+        case .paymentRequired:                  return Localized("StatusCode/Payment Required")
+        case .forbidden:                        return Localized("StatusCode/Forbidden")
+        case .notFound:                         return Localized("StatusCode/Not Found")
+        case .methodNotAllowed:                 return Localized("StatusCode/Method Not Allowed")
+        case .notAcceptable:                    return Localized("StatusCode/Not Acceptable")
+        case .proxyAuthRequired:                return Localized("StatusCode/Proxy AuthRequired")
+        case .requestTimeout:                   return Localized("StatusCode/Request Timeout")
+        case .conflict:                         return Localized("StatusCode/Conflict")
+        case .gone:                             return Localized("StatusCode/Gone")
+        case .lengthRequired:                   return Localized("StatusCode/Length Required")
+        case .preconditionFailed:               return Localized("StatusCode/Precondition Failed")
+        case .requestEntityTooLarge:            return Localized("StatusCode/Request Entity Too Large")
+        case .requestURITooLong:                return Localized("StatusCode/Request URI Too Long")
+        case .unsupportedMediaType:             return Localized("StatusCode/Unsupported Media Type")
+        case .requestedRangeNotSatisfiable:     return Localized("StatusCode/Requested Range Not Satisfiable")
+        case .expectationFailed:                return Localized("StatusCode/Expectation Failed")
+        case .teapot:                           return Localized("StatusCode/Teapot")
+        case .unprocessableEntity:              return Localized("StatusCode/Unprocessable Entity")
+        case .locked:                           return Localized("StatusCode/Locked")
+        case .failedDependency:                 return Localized("StatusCode/Failed Dependency")
+        case .upgradeRequired:                  return Localized("StatusCode/Upgrade Required")
+        case .preconditionRequired:             return Localized("StatusCode/Precondition Required")
+        case .tooManyRequests:                  return Localized("StatusCode/Too Many Requests")
+        case .requestHeaderFieldsTooLarge:      return Localized("StatusCode/Request Header Fields TooLarge")
+        case .unavailableForLegalReasons:       return Localized("StatusCode/Unavailable For Legal Reasons")
+        case .internalServerError:              return Localized("StatusCode/Internal Server Error")
+        case .notImplemented:                   return Localized("StatusCode/Not Implemented")
+        case .badGateway:                       return Localized("StatusCode/Bad Gateway")
+        case .serviceUnavailable:               return Localized("StatusCode/Service Unavailable")
+        case .gatewayTimeout:                   return Localized("StatusCode/Gateway Timeout")
+        case .httpVersionNotSupported:          return Localized("StatusCode/HTTP Version Not Supported")
+        case .variantAlsoNegotiates:            return Localized("StatusCode/Variant Also Negotiates")
+        case .insufficientStorage:              return Localized("StatusCode/Insufficient Storage")
+        case .loopDetected:                     return Localized("StatusCode/Loop Detected")
+        case .notExtended:                      return Localized("StatusCode/Not Extended")
+        case .networkAuthenticationRequired:    return Localized("StatusCode/Network Authentication Required")
+        case .unknown:                          return Localized("StatusCode/Unknown Error")
+        case .noPayload:                        return Localized("StatusCode/No Payload")
+        case .decodeFailed:                     return Localized("StatusCode/Decode Failed")
+        case .adminsOnly:                       return Localized("StatusCode/Admins Only")
         }
     }
 }
-

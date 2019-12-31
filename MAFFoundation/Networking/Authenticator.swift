@@ -8,11 +8,13 @@
 
 import Foundation
 
-/// Authenticator is responsible for getting the necessary credentials (*APIToken*)
+/// HTTP headers.
+public typealias HttpHeaders = [String : String]
+
+/// Authenticator is responsible for getting the necessary authorization headers
 /// to authenticate a given **Request** before sending it to a server.
 public protocol Authenticator {
-    /// Gets APIToken and provides it in the completion handler, if obtained.
-    ///
+    /// Gets authorization headers and provides it in the completion handler.
     /// - Parameter completion: The closure invoked upon completion.
-    func getAPIToken(completion: @escaping (Token?) -> Void)
+    func httpHeaders(completion: @escaping (HttpHeaders?) -> Void)
 }

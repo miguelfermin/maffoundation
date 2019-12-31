@@ -11,7 +11,8 @@ import Foundation
 /// Represents an API error.
 public struct APIError: Error {
     public let code: StatusCode
-    public let text: String
+    public let message: String
+    public let info: Any?
     
     public let data: Data?
     public let response: URLResponse?
@@ -21,31 +22,45 @@ public struct APIError: Error {
     ///
     /// - Parameters:
     ///   - code: The error status code.
-    ///   - text: A friendly error string.
+    ///   - message: The error message.
     ///   - data: (Optional) The Data returned by the Request
     ///   - response: (Optional) The URLResponse returned by the Request.
     ///   - error: (Optional) The Error returned by the Request.
-    public init(code: StatusCode, text: String? = nil, data: Data? = nil, response: URLResponse? = nil, error: Error? = nil) {
+    ///   - info: (Optional) A Dictionary containing additional information about the error.
+    public init(code: StatusCode, message: String? = nil, data: Data? = nil, response: URLResponse? = nil, error: Error? = nil, info: Any? = nil) {
         self.code = code
-        self.text = text ?? code.text
+        self.message = message ?? code.text
         self.data = data
         self.response = response
         self.error = error
+        self.info = info
     }
     
-   init?(data: Data? = nil, response: URLResponse? = nil, error: Error? = nil) {
-        if let error = error {
-            let code = response?.code ?? .unknownError
-            let text = error.localizedDescription
-            self.init(code: code, text: text, data: data, response: response, error: error)
-        }
-        else if let response = response, response.isSuccessful {
+    init?(data: Data? = nil, response: URLResponse? = nil, error: Error? = nil) {
+        if let res = response, res.isSuccessful {
             return nil
         }
-        else {
-            let code = response?.code ?? .unknownError
-            self.init(code: code, data: data, response: response)
+        
+        if error != nil {
+            let code = response?.code ?? .unknown
+            let text = error!.localizedDescription
+            self.init(code: code, message: text, data: data, response: response, error: error!)
+            return
         }
+        
+        guard let json = data?.json, let message = json["message"] as? String else {
+            let code = response?.code ?? .unknown
+            self.init(code: code, data: data, response: response)
+            return
+        }
+        
+        self.init(
+            code: response?.code ?? .unknown,
+            message: message,
+            data: data,
+            response: response,
+            info: json["info"]
+        )
     }
     
     var isUnauthorized: Bool {
@@ -56,8 +71,8 @@ public struct APIError: Error {
 // MARK: - Supporting Types
 private extension URLResponse {
     var code: StatusCode {
-        guard let code = (self as? HTTPURLResponse)?.statusCode else { return .unknownError }
-        return StatusCode(rawValue: code) ?? .unknownError
+        guard let code = (self as? HTTPURLResponse)?.statusCode else { return .unknown }
+        return StatusCode(rawValue: code) ?? .unknown
     }
     var isSuccessful: Bool {
         return (200...299).contains((self as? HTTPURLResponse)?.statusCode ?? 1)
